@@ -1,0 +1,12 @@
+To do list:
+
+* Add burger icon in navbar when window is smaller than certain size
+* Add google login functionality
+* Add functionality to send emails
+* Finish adding content to the infographic area
+* finish the contact us section
+* finish the about us section
+
+Next meeting:
+discuss possible gallery designs - go to bookmarked link
+discuss json object for each listed resource

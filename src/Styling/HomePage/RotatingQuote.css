@@ -1,0 +1,52 @@
+.quoteContainer{
+    width: 100%;
+    height: atuo;
+    background-color: darkcyan;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0, .7);
+    padding: 2%;
+    box-sizing: border-box;
+    color: white;
+}
+
+.quoteContainer p{
+  margin-bottom: 1%;
+  font-style: italic;
+}
+/* fade in effect */
+/* .fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+} */

@@ -1,0 +1,194 @@
+.contactContainer{
+    width: 100%;
+    height: 95vh;
+    background-color: var(--accentBlue);
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-image: url("../../media/contact-us-background-image.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-contact-container{
+    /* width: 100%; */
+    width: -webkit-calc(100% - 3% - 3%);
+    height: 100%;
+    background-color: rgba(255, 255, 255, .15);
+    /* background-color: red; */
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+.inner-contact-container h1{
+    width:fit-content;
+    height: fit-content;
+    padding-bottom: 3px;
+    border-bottom: 5px solid var(--darkGray);
+    margin-bottom: 10px;
+    font-size: 2em;
+    margin-left: 2%;
+}
+
+.nestedDiv{
+    width: 100%;
+    height:100%;
+    /* background-color: red; */
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.leftInput{
+    width: 40%;
+    height: 100%;
+    /* background-color: var(--midGray);
+     */
+     background-color: rgba(57, 62, 70, .9);
+    -webkit-box-shadow:  0 0 10px var(--darkGray);
+    box-shadow:          0 0 10px var(--darkGray);
+    border-radius: 10px;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-sizing: border-box;
+    opacity: 1;
+
+    /* -webkit-box-shadow:  0 0 10px var(--darkGray);
+    box-shadow:          0 0 10px var(--darkGray);
+    
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  border-radius: 10px; */
+}
+
+.leftInput h2{
+  color: var(--accentBlue);
+  margin-bottom: 2%;
+}
+.emailForm{
+  width: 100%;
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.emailForm label{
+  font-size: 1.5vw;
+}
+
+.emailForm input[type=text], .emailForm select, .emailForm textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: none;
+  /* border-radius: 4px;  */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-bottom: 16px; /* Bottom margin */
+  resize:none; 
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+textarea{
+  height: 65%;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: var(--accentBlue);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: var(--accentBlue);
+  opacity: .7;
+}
+
+.sub-right-container{
+    width: 58%;
+    height: 100%;
+    /* background-color: var(--lightGray); */
+    -webkit-box-shadow:  0 0 10px var(--darkGray);
+    box-shadow:          0 0 10px var(--darkGray);
+    border-radius: 10px;
+}
+
+.overlay-ribbon {
+  position: absolute;
+  width: 3em;
+  height: 10em;
+  z-index: 2;
+  top: -1em;
+  right: 1.3%;
+  background: #2ec4b6;
+  padding: 5px 0;  
+  background-image: radial-gradient(circle farthest-side at center top, #cbf3f0 0%, #2ec4b6 100%);
+  -webkit-box-shadow: -5px 21px 28px -4px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: -5px 21px 28px -4px rgba(0, 0, 0, 0.43);
+  box-shadow: -5px 21px 28px -4px rgba(0, 0, 0, 0.43);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.overlay-ribbon:before {
+  content: "";
+  position: absolute;
+  bottom: -2em;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 3em solid #2ec4b6;
+  border-right: 3em solid transparent;
+  z-index: 997;
+}
+
+.overlay-ribbon:after {
+  content: "";
+  position: absolute;
+  bottom: -2em;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 3em solid #2ec4b6;
+  border-left: 3em solid transparent;
+  z-index: 998;
+}
+
+.custom-shape-divider-top-1636233719 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
+}
+
+.custom-shape-divider-top-1636233719 svg {
+    position: relative;
+    display: block;
+    width: calc(250% + 1.3px);
+    height: 67px;
+}
+
+.custom-shape-divider-top-1636233719 .shape-fill {
+    fill: #FFFFFF;
+}

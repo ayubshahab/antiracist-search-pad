@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outerBody{
+      background-image: url("../../media/landing_image.png"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+    /* background-color: var(--darkGray); */
+    /* background-color: #142850; */
+    /* background: linear-gradient(to right, var(--darkGray)  50%, var(--lightGray) ); */
+    width: 100%;
+    /* height: -o-calc(100vh - 65px); opera */
+    height: -webkit-calc(100vh - 50px); /* google, safari */
+    /* height: -moz-calc(100vh - 65px); firefox */
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    overflow: hidden;
+    /* padding-left: 3%;
+    padding-right: 3%; */
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+
+.smallTextArea{
+    color: white;
+    width: 40%;
+    height: auto;
+    /* background-color: lightblue; */
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    /* animation: 2s ease 0s slideLeft; */
+}
+
+.smallTextArea p{
+    font-size: 1.1vw;
+    margin-bottom: 2%;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1001px) {
+  .smallTextArea p {
+    font-size: 19px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) {
+  .smallTextArea p {
+    font-size: 14px;
+  }
+}
+
+.smallTextArea h1{
+    color: var(--accentBlue);
+    margin-bottom: 2%;
+    align-self:flex-start;
+}
+
+@keyframes slideLeft {
+    0%{ transform: translateX(-100%);}
+    100%{ transform: translateX(0);}
+}
+
+.rightImgContainer{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    /* background-color: coral; */
+    position: relative;
+    
+}
+
+.img1, .img2, .img3{
+    /* -webkit-box-shadow:  0 0 00px var(--lightGray); */
+    /* box-shadow:          0 0 0px var(--lightGray); */
+    border: 1px solid var(--accentBlue);
+    background-color: var(--midGray);
+}
+.img1{
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    /* background-color: red; */
+    right: 3%;
+    top: 3%;
+    animation: 2s ease 0s slideDiagonallyNegative;
+}
+
+@keyframes slideDiagonallyNegative {
+    0%{ transform: translateX(100%) translateY(-100%);}
+    100%{ transform: translateX(0) translateY(0);}
+}
+
+.img2{
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    /* background-color: pink; */
+    left: 5%;
+    top: 10%;
+    animation: 2s ease 0s slideDiagonallyNegative2;
+}
+
+@keyframes slideDiagonallyNegative2 {
+    0%{ transform: translateX(-100%) translateY(-100%);}
+    100%{ transform: translateX(0) translateY(0);}
+}
+
+.img3{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    /* background-color: green; */
+    left: 25%;
+    bottom: 10%;
+    animation: 2s ease 0s bottomUp;
+    
+    background-image: url("../../media/landing-section-img.jpg");
+    background-position:right; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+@keyframes bottomUp {
+    0%{ transform:  translateY(100%);}
+    100%{ transform: translateY(0);}
+}
+
+.animate {
+  transition: transform .35s ease-in-out;
+}
+
+.animate.grow {
+  transform: scale(1.5);
+}
+
+.custom-shape-divider-bottom-1636132055 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1636132055 svg {
+    position: relative;
+    display: block;
+    width: calc(152% + 1.3px);
+    height: 96px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1636132055 .shape-fill {
+    fill: #FFFFFF;
+}
